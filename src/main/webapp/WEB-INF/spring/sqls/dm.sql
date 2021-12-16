@@ -19,7 +19,7 @@ CREATE TABLE USER_INFO(
 
 
 DROP TABLE STADIUM;
-DROP SEQUENCE STADIUM_NOSQ;
+DROP SEQUENCE STADIUM_NOSEQ;
 
 CREATE SEQUENCE STADIUM_NOSQ NOCACHE;
 
@@ -31,6 +31,75 @@ CREATE TABLE STADIUM(
 	STADIUM_WEBADDR VARCHAR2(1000),
 	STADIUM_PHONENUM VARCHAR2(500)
 );
+
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES (1,'홍싸커&실내풋살장','서울시 강동구 동남로 891 현대델리안 오피스텔','실내이고 규격은 미니사이즈이며 바닥형태는 인조잔디이다.',
+'https://blog.naver.com/hcmin0410','010-3350-3698' );
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES (2, '용산 더베이스 풋살장','서울시 용산구 한강대로 23길 55(한강로 3가) HDC 아이파크몰 리빙파크 9F',
+        '실내에 1,2,3 구장 각각 40m*20m가 있고 4구장 34m*20m가 있다. 경기장 규격은 5구장 31m*20m /6,7구장은 40*19m이고
+         바닥에 실내-실내전용 피치플로워, 실외-인조잔디가 되어있다.','www.iparkmallco.kr/thebase/intro.do','02-2012-3810' );
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)	
+VALUES                  (3,'잠실무브풋살파크','서울시 송파구 올림픽로 25길 종합운동장 내','경기장 형태는 실외이고 규격은 40M*20M이며 바닥형태는 인조잔디이다',
+			'https://stadium.seoul.go.kr/','02-2240-8783');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)	
+VALUES      (4, '반야트리호텔 풋살장(회원제)','서울시 중구 장충단로 60','회원제로 운영된다.','','02-2250-8080');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)	
+VALUES     (5, '황금내 근린공원 풋살장','서울시 강서구 염창동 227-1','경기장 규격은 40M*20M이고 바닥형태틑 실내용 피치플로워로 했고 골대사이즈는 기본사이즈이다',
+             '','')
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)	
+VALUES      (6,'응봉체육공원 풋살장','서울시 성동구 응봉동 235','경기장 형태는 실외이며 규격은 40M*18M, 바닥형태는 실내용 피치플로워이다.',
+             'https://sports.happysd.or.kr/contents/contents.do?gidx=170200','02-2204-7650');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)	
+VALUES      (7, '천마 풋살클럽','서울시 송파구 마천동 68-21','경기장 형태는 실외이며 규격은 30M-18M 3면이다. 바닥형태는 인조잔디이다.',
+             'http://www.cmfutsalpark.com','02-3401-5959');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)	
+VALUES      (8,'성동풋볼웨이아카데미','서울시 성동구 뚝섬로 1길 18/성수1가 656-1244','경기장 형태는 실내이며 규격은 A구장이 20M*10M, B구장이 15M*10M인 미니구장이다.
+             바닥형태는 인조잔디이다.','','02-462-7006');          
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (9,'훼릭스풋살클럽','경기도 고양시 덕양구 고양대로 1624','경기장 형태는 실외이고 규격은 38M*18M에 바다형태는 인조잔디이다.',
+             '','031-968-0434');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (10,'J&S 풋살파크-1호점','경기도 오산시 수청로 50번길 25-5','경기장 형태는 실내이며 규격은 33M*15M, 바닥형태는 인조잔디이다.',
+             '','031-373-0567');      
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (11,'J&S 풋살파크-2호점','경기도 오산시 서부로 31-28','경기장 형태는 실외이며 규격은 38M*18M, 바닥형태는 인조잔디이다.',
+             '','010-8233-0567');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (12,'로꼬 풋살스타디움 고양터미널점','경기도 고양시 일상동구 중앙로 1036 롯데아울렛 5층 옥상','경기장 형태는 실외이며 규격은 
+             40M*20M이며 바닥형태는 인조잔디이다.','','0507-0267-7002');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (13,'스카이필드 동수원점','경기도 수원시 팔달구 인계로 154 뉴코아 아울렛 11층','경기장 형태는 실외2면이며 규격은 실외A(28*16/
+             실외B(미니사이즈)이다. 바닥형태는 인조잔디이다.','','010-4284-5254');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (14,'수원 에스빌드 풋살파크','경기도 수원시 팔달구 우만동 310 보조경기장 에스빌드풋살파크','경기장 형태는 실외6면/실내2면이며 규격
+             은 40M*20M이고 바닥형태는 인조잔디이다.','','031-242-4238');       
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (15,'1호점 세계로풋볼클럽','경기도 이천시 부발읍 가산지 468-17','경기장 형태는 실외2면/실내1면이며 규격은 실내/실외 모두 40M*
+             20M이고 바닥형태는 인조잔디이다.','','010-2455-3038');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (16,'2호점 세계로 풋볼 아카데미','경기도 이천시 부발읍 가산리 447번지','경기장 형태는 실외 3면이며 규격은 40M*20M이고 바닥형태
+             는 인조잔디이다. ','','010-2455-3038');             
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (17,'3호점 세계로 케이지 풋살장','경기도 이천시 부발읍 가산리 422-4번지','경기장 형태는 실내이며 규격은 미니사이즈, 바닥은 인조
+             잔디이다.','','010-2455-3038');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (18,'로꼬 풋살스타디움 인천 중구점','인천시 중구 서해대로 209번길 2 6층','경기장 형태는 실외이고 규격은 35M*18M 이며 바닥
+             형태는 인조잔디이다.','','0507-0267-7000' );
+             
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (19,'인천 더베스트 풋볼파크','인천광역시 남동구 인하로 485번지 뉴코아 아울렛 13층','경기장 형태는 실외 인조잔디이고, 규격은 
+            40M*18M,바닥형태는 인조잔디이다.','','010-2102-5056');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (20,'청주풋볼센터','충북 청주시 서원구 남이면 가좌신송로 40-18','경기장 형태는 실내(1)/실외(6)이고 규격은 40M*20M 이고 
+             바닥형태는 인조잔디이다.','','043-268-2002');
+INSERT INTO STADIUM(STADIUM_NO,STADIUM_NAME,STADIUM_ADDR,STADIUM_CONTENT,STADIUM_WEBADDR,STADIUM_PHONENUM)
+VALUES      (21,'세종풋살파크','세종 연서면 월성로 86 세종풋살파크','경기장 형태는 실외3면이며 규격은 38M*18M이고 바닥형태는 인조잔디이다',
+             '','010-4391-0733');
+             
+             
+SELECT * FROM STADIUM;
+
 
 DROP TABLE REVIEW;
 DROP SEQUENCE REVIEW_NOSQ;
@@ -60,6 +129,62 @@ CREATE TABLE STADIUM_PIC(
 	CONSTRAINT FK_STADIUM_NO2 FOREIGN KEY(STADIUM_NO) REFERENCES STADIUM(STADIUM_NO)
 		ON DELETE CASCADE
 );
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (1,'홍싸커','http://drive.google.com/uc?export=view&id=1K4iGu3XfnR0eP9Fg2KqGVU9MLiK4Vc8o');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (2,'용산더베이스','http://drive.google.com/uc?export=view&id=1HEiaIoJWE3x_-gwsLMNL9HaS9LB_Mx4M');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (3,'잠실무브','http://drive.google.com/uc?export=view&id=1byfGlnw3lWlpP1glKr2AT_VSaIyFBFWF');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (4,'반야트리','http://drive.google.com/uc?export=view&id=16rFO9W4wQjsChM_lHQCAY-STe9st3iyH');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (5,'황금','http://drive.google.com/uc?export=view&id=1ZXl8rnSvOxfhEMbuzsLy9vuQ7XgNtWFR');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (6,'응봉','http://drive.google.com/uc?export=view&id=1ROKOU61fBl65fDVwr_4hQKkO1DuO3tRy');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (7,'천마','http://drive.google.com/uc?export=view&id=1LBMbsbAKY6lQ3YM1te44dZ3VNznPhknH');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (8,'성동','http://drive.google.com/uc?export=view&id=1g5v2PQMTxjJ6RTb7susq3wo9YJxFORo8');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (9,'훼릭스','http://drive.google.com/uc?export=view&id=1bhFC8uDqrhSIQZk26UWu2pm0JsF7Cgre');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (10,'JS1','http://drive.google.com/uc?export=view&id=17YhmnLBenFg6B-0NzFZzjr2UWJGyc5Vq');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (11,'JS2','http://drive.google.com/uc?export=view&id=1jyxUpiZ0OfmH-yakifQwKl8dHbGxTg_o');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (12,'고양','http://drive.google.com/uc?export=view&id=1C4q4KZkTQ0NDJRIBhj2i4tdb7L9rPj9B');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (13,'스카이필드','http://drive.google.com/uc?export=view&id=1Rv1-mzRJi1TAQbH6nvY0HC9VK69-uOMo');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (14,'에스빌드','http://drive.google.com/uc?export=view&id=1YVdKOOPRBrKacpXXF75L_QQS5cFACFdu');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (15,'1호점 세계로','http://drive.google.com/uc?export=view&id=1G_wcUxPPejgYPNi6IwbEIH0FULUVRpoU');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (16,'2호점세계로','http://drive.google.com/uc?export=view&id=1lfasu_ZW05kBsDvNiHiX_BevyXHfMVGs');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (17,'3 세계로','http://drive.google.com/uc?export=view&id=1gMlJXsyelpnxg1UB3JlI9fTyQ_h6dbbt');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (18,'로꼬 인천','http://drive.google.com/uc?export=view&id=1FdIHFK67gaoLJdD_W569HhTtrTWwmQ92');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (19,'인천더베스트','http://drive.google.com/uc?export=view&id=1W-yrJ5VABpvUjEk2fGWqtW3_rm8UPSzA');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (20,'청주','http://drive.google.com/uc?export=view&id=1KoM7dmFQjK2Erfrrp2fniPJfZY_T4k3H');
+INSERT INTO STADIUM_PIC(STADIUM_NO,PIC_NAME,PIC_PATH)
+VALUES (21,'세종','http://drive.google.com/uc?export=view&id=1TyAuVv8juA3EohXFMGj0Kr6tgqwvUoQK');
+
+
+SELECT * FROM STADIUM_PIC;
+
+
+
+
+
+
+
+
+
+
+
 
 DROP TABLE TEAM_INFO;
 DROP SEQUENCE TEAM_NOSQ;
